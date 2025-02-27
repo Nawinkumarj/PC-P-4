@@ -11,7 +11,7 @@ import bookClose from './BookClosed.svg'
 import openBook1 from "./openbook1.png";
 import openBook2 from "./openbook2.png";
 import openBook3 from "./openBook3.png";
-import fog from "./fog.svg"
+import fog from "./Fog.svg"
 import teamBanner from "./teamBanner.svg"
 import T1 from "./T1.svg"
 import T2 from "./T2.png";
