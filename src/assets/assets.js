@@ -8,8 +8,8 @@ import serviceImg from './serviceImg.svg'
 import serviceFrame from './serviceFrame.svg'
 import serviceIcon from './serviceIcon.svg'
 import bookClose from './BookClosed.svg'
-import openBook1 from "./openBook1.png";
-import openBook2 from "./openBook2.png";
+import openBook1 from "./openbook1.png";
+import openBook2 from "./openbook2.png";
 import openBook3 from "./openBook3.png";
 import fog from "./fog.svg"
 import teamBanner from "./teamBanner.svg"
