@@ -8,7 +8,7 @@ const Team = () => {
   
   return (
     <div className="team-container">
-      <Banner
+      {/* <Banner
         bannerImg={
           "https://t3.ftcdn.net/jpg/06/93/07/90/360_F_693079062_Dcec4wDZg6nnLwlpQpiOK9LyhtoA40Q0.jpg"
         }
@@ -18,7 +18,7 @@ const Team = () => {
         text={"legal process perfected we"}
         breakText={"deliver excellence"}
         highlightText={"every time"}
-      />
+      /> */}
       <div className="team-main">
         <div className="team-nav">
           <div

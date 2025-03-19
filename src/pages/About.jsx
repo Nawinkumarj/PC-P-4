@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Banner from "../components/Banner";
 import { assets } from "../assets/assets";
 import AboutHead from "../components/AboutHead";
@@ -8,6 +8,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const About = () => {
 
 useEffect(() => {
+  if (window.innerWidth < 768) return; // Disable GSAP for smaller screens
+
   gsap.registerPlugin(ScrollTrigger);
 
   const timeline = gsap.timeline({
@@ -18,10 +20,8 @@ useEffect(() => {
       scrub: 1,
       pin: true,
       onUpdate: (self) => {
-        // Get progress (0 to 1)
         const progress = self.progress;
 
-        // Determine which book to show based on scroll progress
         if (progress < 0.3) {
           toggleBookVisibility(1);
         } else if (progress < 0.6) {
@@ -29,19 +29,14 @@ useEffect(() => {
         } else if (progress < 0.9) {
           toggleBookVisibility(3);
         } else {
-          toggleBookVisibility(0); // Closed book when fully scrolled
+          toggleBookVisibility(0);
         }
       },
     },
   });
 
   timeline
-    .from(".animation1-main", {
-      x: "100%",
-      y: "-100%",
-      opacity: 0,
-      duration: 1,
-    })
+    .from(".animation1-main", { x: "100%", y: "-100%", opacity: 0, duration: 1 })
     .to(".animation1-main", { x: "0%", y: "0%", opacity: 1, duration: 1 });
 
   timeline
@@ -61,13 +56,13 @@ useEffect(() => {
     });
   };
 
-  // Set initial state to closed book
   toggleBookVisibility(0);
 
   return () => {
     ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
   };
 }, []);
+
 
 
 
@@ -88,7 +83,7 @@ useEffect(() => {
       <div className="about-main">
         <div className="about-head">
           <div className="about-head-bg">
-            <img src="https://media.istockphoto.com/id/1097811822/photo/bookshelf-of-irish-legal-books.jpg?s=612x612&w=0&k=20&c=8otSyGSVWUIOn6s8Bb_gXBfw_UqmZKrtyOCkpAmmzrc=" />
+            <img src="https://s3-alpha-sig.figma.com/img/5d95/0d60/def726f60ff92d04fe41ad02ecee8eaf?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ijv4m3RiEY3FQNDy9saTLAENP5p4khNIYPh8yLfjChP75a17L3qZMmM5zswYIwu6OninVlMHr54RSkTa6CpAIurSyXU~evrZPYFGThoc1gntG6roydPacOYTcEqSvLTxdi5kT6eq59c2lSuK9oeDiAQW3egah2ZsLUYMSTMOBJAqvXFignejDmLzUlIcQp3u6-t6gDV1CUXtGuvcpgG29M-ijqt1-C-TIdaJVK8A9izcESSlwOafBhxjxYg2gT53ye~ok-XYfcKaO2xSmiLNzXKQNrMM2rQTMZuX~DzeuF-~zMwTOoMYrO~Cigdb7XwKW6BAx0MXSo2r-KrUnbQrig__" />
           </div>
           <div className="abouthead-content-main">
             <div className="abouthead-content">

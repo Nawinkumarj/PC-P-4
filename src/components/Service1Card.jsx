@@ -57,9 +57,9 @@ const Service1Card = () => {
                     <div onClick={() => handleKnowMore(service.id)}>
                       <p>Know More</p>
                     </div>
-                    <div>
+                    {/* <div>
                       <p>Add to Cart</p>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

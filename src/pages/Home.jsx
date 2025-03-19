@@ -100,7 +100,7 @@ const Home = () => {
           Solutions!
         </p>
 
-        <TestimonialSlider />
+        {/* <TestimonialSlider /> */}
       </div>
 
       {/* EVENTS SECTION */}

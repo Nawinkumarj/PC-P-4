@@ -20,10 +20,11 @@ const Service1 = () => {
       />
       <div className="service1-main">
         <div className="service1-head">
-          <div className="service1-top">
             <div className="service1-top-head">
               <AboutHead heading={"loream ipsum dolor sit amet"} />
             </div>
+          <div className="service1-top">
+          
             <div className="service1-top-content">
               <p>
               We provide professional and vast legal services customized to protect businesses, mitigate
@@ -35,10 +36,11 @@ const Service1 = () => {
               needs, making legal processes seamless and strategic.
               </p>
             </div>
-          </div>
+          
           <div className="service1-img">
             <img src={assets.AboutUs} />
-          </div>
+            </div>
+            </div>
         </div>
         <div className="service1-content">
           <Service1Card />

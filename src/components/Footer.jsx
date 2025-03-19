@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="footer-container">
         <img
           className="footer-container-img"
-          src="https://s3-alpha-sig.figma.com/img/5d95/0d60/def726f60ff92d04fe41ad02ecee8eaf?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=qWqtSaCrPb0iZRYQm8X3RqF2aC5eQCCCh-iHBHnfEJ4rssE9LI94lpSaMX0Suuq1tTCn~OaT~HUdVMUIWKuFW1Gqd3VGRcEz9l4ZhUsw5VQw-LBPrntrobweYSQ-bfdy5DSnUgFLnWjfoyVDWN5b1XRBHKmgsaZY7dyBQ7MEmx76tWSkAIReNUXPC2vM05y0lM5RiSoKJxU~WSMcTNbnZi9-ecjSDkdgVoZz5RJn9amWXTqEi8eRh02hggiPP3-WCGBZLEDmmKaNpPHAZpFVCWJ9JF823Kjv3ciOOfE6WMBKmKwGc8bqLzYdu4XAvGjFPhOhn4rwcNDGNwh9yCyMLw__"
+          src="https://media.istockphoto.com/id/1388548812/photo/lawyer-office.jpg?s=612x612&w=0&k=20&c=WbNvwVXJyya6OkeYWVe0yaHT8u1HM86-wUPYBvBAV6g="
         />
         <div className="foot-main">
           <div className="footer-main">
@@ -32,7 +32,7 @@ const Footer = () => {
                 <img src={assets.pcLogo} />
               </div>
               <div className="footer-connect">
-                <h1>Stay in the know</h1>
+                {/* <h1>Stay in the know</h1>
                 <div className="footer-message">
                   <form>
                     <input
@@ -42,7 +42,7 @@ const Footer = () => {
                     />
                     <button type="submit">Submit</button>
                   </form>
-                </div>
+                </div> */}
                 <p>Copyright © 2024 All Rights Reserved</p>
               </div>
             </div>
@@ -52,19 +52,19 @@ const Footer = () => {
                   <h1>Company</h1>
                   <Link to="/">
                     <p>
-                      <MoveRight />
+                      <MoveRight className="move-right-icon"  />
                       Home
                     </p>
                   </Link>
                   <Link to="/about">
                     <p>
-                      <MoveRight />
+                      <MoveRight className="move-right-icon"  />
                       About Us
                     </p>
                   </Link>
                   <Link to="/service1">
                     <p>
-                      <MoveRight />
+                      <MoveRight className="move-right-icon" />
                       Service
                     </p>
                   </Link>
@@ -72,15 +72,15 @@ const Footer = () => {
                 <div className="foot-nav2">
                   <h1>Contact</h1>
                   <p>
-                    <MoveRight />
+                    <MoveRight className="move-right-icon" />
                     8925863894
                   </p>
                   <p>
-                    <MoveRight />
+                    <MoveRight className="move-right-icon"  />
                     info@primecounselsolutions.com
                   </p>
                   <p>
-                    <MoveRight />
+                    <MoveRight className="move-right-icon" />
                     Chennai
                   </p>
                 </div>

@@ -50,6 +50,7 @@ import testimonial2 from "./TESTIMONIAL IMG 2.svg"
 import starIcon from "./starIcon.svg"
 import serviceDetailsBG from "./serviceDetailsBG.svg"
 import priceTickicon from "./priceTickicon.svg"
+import ServiceInsideIcon from "./ServiceInsideIcon.svg"
 
 export const assets = {
   logo,
@@ -104,4 +105,5 @@ export const assets = {
   starIcon,
   serviceDetailsBG,
   priceTickicon,
+  ServiceInsideIcon,
 };
